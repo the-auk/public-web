@@ -8,10 +8,9 @@ export default function About() {
         <div className={styles.textarea}>
                 <h1>Working as a web developer at JPT Group INC.</h1>
                 <h1>Building stuff with ReactJS and Python.</h1>
-                <h1>Watching animes and reading mangas or looking at Cars.</h1>
                 <h1>Building a Café Racer.</h1>
-            </div>
-        
+        </div>
+        <div className={styles.blur}></div>
         </div>
 
         <Head>
@@ -22,4 +21,3 @@ export default function About() {
     </div>
     )
   }
-  
