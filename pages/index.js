@@ -18,9 +18,9 @@ export default function Home() {
       </div>
       <div className={styles.horizontalLine}></div>
       <div className={styles.navbarright}>
-        <a href="http://github.com/the-auk">Github</a>&emsp;
-        <a href="http://linkedin.com/in/tanmaysiwach">LinkedIn</a>&emsp;
-        <a href="/Siwach-Resume.pdf">Resume</a>
+        <div className={styles.navanchor}><a href="http://github.com/the-auk">Github</a>&emsp;</div>
+        <div className={styles.navanchor}><a href="http://linkedin.com/in/tanmaysiwach">LinkedIn</a>&emsp;</div>
+        <div className={styles.navanchor}><a href="/Siwach-Resume.pdf">Resume</a></div>
       </div>
       <div className={styles.verticalLine}></div>
         <div className={styles.first}> 
@@ -28,16 +28,13 @@ export default function Home() {
             <div className={styles.ivar}><p><span className={styles.slideleft}>T</span> a n m a y &ensp; <span className={styles.slideleft}>S</span> i w a c h</p></div>
         </div>      
         <div className={styles.tealbox}></div>
-        <div className={styles.firstright}>
-          <img alt="Tanmay Siwach - Software Engineer" title="Tanmay" className={styles.me} src='/me.jpg' />
-        </div>
         </div>
         <div className={styles.secondnav}>
         {/* <button onClick={()=> setshowAbout(true) && setshowProject(false)}>What I'm Upto</button>
         <button onClick={()=> {setshowProject(true); setshowAbout(false);} }>Projects</button> */}
-        <button onClick={()=> setshowSection("about")}>What I'm Upto</button>
-        <button onClick={()=> setshowSection("project")}>Projects</button>
-        <button onClick={()=> setshowSection("coding")}>Coding Experience</button>
+        <button className={styles.secnavbtn} onClick={()=> setshowSection("about")}>What I'm Upto</button>
+        <button className={styles.secnavbtn} onClick={()=> setshowSection("project")}>Projects</button>
+        <button className={styles.secnavbtn} onClick={()=> setshowSection("coding")}>Coding Experience</button>
         </div>
         
         </div>
