@@ -1,18 +1,16 @@
 .wrapper{
   color: gray;
   width: auto;
-  max-width: 60vw;
+  width: 100%;
   height: 100%;
-  min-height: 60vh;
   background: linear-gradient(0deg, rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.3)), url('/gogh.jpg');
+  background-position: 50% 80%;
   background-size: cover;
-  background-position: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -2;
 }
+
 .aboutwrap{
 height: 100%;
 width: 100%;
@@ -23,19 +21,30 @@ align-items: center;
 
 .textarea{
   font-size: 0.85vw;
-  left:50%;
-  width: 100%;
-  height: auto;
   padding: 5%;
-  background: linear-gradient(-45deg, rgba(22, 22, 22, 1), rgba(22, 22, 22, 0.3));
+  width: auto;
+  height: auto;
+  min-width: 40vw;
+  min-height: 50vh; 
   position: relative;
-  color: gray;
+  color: black;
   border-radius: 1.5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+.blur{
+  border-radius: 1.5vw;
+  z-index: -1;
+  left: auto;
+  right: auto;
+  position: absolute;
+  min-width: 50vw;
+  min-height: 60vh;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
 }
 @media (orientation: portrait) {
   .textarea{
@@ -77,4 +86,3 @@ align-items: center;
     padding: 3vh 0;
   }
 }
-
