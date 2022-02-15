@@ -1,5 +1,8 @@
 import styles from '../styles/Project.module.css'
+import Head from 'next/head'
 import Image from 'next/image'
+import React, {useState } from "react";
+
 export default function Projects() {
   const[showSection, setshowSection] = useState("mixit")
 
@@ -21,7 +24,12 @@ export default function Projects() {
           <button onClick={()=> setshowSection("meals")}>theAUk_Meals</button></div>
           </div>
         </div>
-        
+
+        <Head>
+          <title>Tanmay Ivar Siwach</title>
+          <link rel="icon" href="/TA.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        </Head>
       </div>
     )
   }
