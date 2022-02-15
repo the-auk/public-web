@@ -8,8 +8,9 @@
   top: 0;
   left: 0;
   color: #000000;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  z-index: -5;
 }
 .wrapper{
   position: relative;
@@ -51,19 +52,29 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 80vh;
   color: #000000;
   font-size: 2.5vh;
-   -webkit-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);  
     -ms-transform: rotate(-90deg);  
     -o-transform: rotate(-90deg);   
     transform: rotate(-90deg);
   left: -17vw;
-  top: 45vh;
+  top: 50vh;
   z-index: 20;
 }
+
+.navanchor{
+  width: 100px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbarright a:hover{
   font-size: 3vh;
 }
@@ -81,7 +92,6 @@
   top: 40vh;
 }
 
-
 .first{
   display: flex;
   flex-direction: row;
@@ -97,7 +107,7 @@
   position: absolute;
   background-color: teal;
   right: -10vw; 
-  width: 100vw;
+  width: 95vw;
   height: 8vh;
 }
 .firstleft{
@@ -107,7 +117,7 @@
   justify-content: center;
 }
 .ivar{
-  font-family: 'Anonymous Pro';
+  font-family: 'Montserrat', sans-serif;
   align-self: center;
   font-size: 8vh;
 }
@@ -115,20 +125,6 @@
   font-family: 'Allison';
   font-size: 20vh;
 }
-.me{
-  max-height: 15vw;
-  width: auto;
-  filter: drop-shadow(.05rem .05rem 0.5rem #000000);
-  filter: grayscale(50%);
-}
-.firstright{
-  z-index: -3;
-  position: absolute;
-  right: 20vw;
-  bottom: 20vh;
-}
-
-
 
 .secondnav{
   width: 100%;
@@ -142,8 +138,20 @@
   justify-content: space-around;
 }
 
-.secondnav button{
-  font-family: 'Montserrat';
+.secondnav button:focus{
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  color: #75448C;
+}
+.secondnav button:active{
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  color: #75448C;
+}
+.secnavbtn{
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -155,16 +163,12 @@
   background-color: transparent;
   color: black;
   width: 100%;
+  height: 50px;
 }
-.secondnav button:hover{
+.secnavbtn:hover{
   font-size: 1.7rem;
 }
-.secondnav button:focus{
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: .3rem;
-  color: #75448C;
-}
+
 .wrapper2{
   width: 100vw;
   height: 100vh;
