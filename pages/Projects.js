@@ -1,7 +1,5 @@
 import styles from '../styles/Project.module.css'
-import Head from 'next/head'
 import Image from 'next/image'
-import React, {useState } from "react";
 import mixit from '../public/MIXIT.webp';
 import calen from '../public/calen.webp';
 import anti from '../public/anti.webp';
@@ -63,11 +61,6 @@ export default function Projects() {
           </div>
           </div>
         </div>
-        <Head>
-          <title>Tanmay Ivar Siwach</title>
-          <link rel="icon" href="/TA.ico" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        </Head>
       </div>
     )
   }
